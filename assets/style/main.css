@@ -1,0 +1,43 @@
+@import url(./theme.css);
+
+main {
+    margin: 100px 200px;
+}
+
+.main-blocks {
+    display: flex;
+}
+
+#room {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.div-switchs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px;
+    border-radius: 25px;
+    width: 300px;
+    margin: 20px 20px 20px 0px;
+    
+}
+
+.div-switchs > img {
+    width: 40px;
+    
+}
+
+.switch-items {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}

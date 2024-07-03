@@ -1,0 +1,23 @@
+:root {
+    /* --background:  rgb(243, 234, 223); */
+    --background:  rgb(255, 255, 255); 
+    --yellow: rgb(238, 189, 98);
+    --denied : #d86666;
+    --allowed : #55ce57;
+    --font-color: rgb(141, 88, 19);
+}
+
+* {
+    font-family: "Karla", sans-serif;
+    color:var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: medium;
+}
