@@ -1,14 +1,24 @@
 @import url(./theme.css);
 
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 main {
-    margin: 100px 200px;
-}
-
-.main-blocks {
     display: flex;
+    margin: 200px 500px 200px 300px;
+    flex-direction: column;
 }
 
-#room {
+.main_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.div-main-blocks {
     display: flex;
     flex-direction: column;
 }
@@ -26,7 +36,8 @@ main {
     flex-direction: row;
     box-shadow: 2px 2px 5px;
     border-radius: 25px;
-    width: 300px;
+    height: 60px;
+    width: 400px;
     margin: 20px 20px 20px 0px;
     
 }
@@ -41,3 +52,25 @@ main {
     margin: 10px;
     align-items: center;
 }
+
+.time-table {
+    background-color: var(--yellow);
+    border-radius: 25px;
+    margin-top: 20px;
+    width: 360;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time-table > h2 {
+    margin: 0px 80px 0px 80px;
+}
+
+.time-table .material-symbols-outlined {
+    font-size: 40px;
+    align-self: flex-end;
+    margin-right: 10px;
+} 
