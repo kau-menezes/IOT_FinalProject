@@ -20,6 +20,13 @@ const loadData = () => {
 
 }
 
+const darkMode = () => {
+    let main = document.getElementById('main')
+    main.classList.toggle('dark-mode')
+}
+
+document.getElementById("btn").addEventListener("click", darkMode);
+
 const setNames = () => {
     const gato1 = document.getElementById("gato-1-nome");
     const gato2 = document.getElementById("gato-2-nome");

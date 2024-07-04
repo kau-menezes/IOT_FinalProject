@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/switch-btn.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/clock.css">
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
@@ -32,12 +33,12 @@
                 <span class="material-symbols-outlined">alarm</span>
             </li>
             <li>
-                <span class="material-symbols-outlined">dark_mode</span>
+                <span class="material-symbols-outlined" id="btn">dark_mode</span>
             </li>
         </ul>
 
     </header>
-    <main>
+    <main id="main">
         <div class="adress">
             <h3>Página Controle  >  Quarto</h3>
         </div>
@@ -79,9 +80,37 @@
                 </div>
                 <div class="time-table">
                     <h2>Permissão de entrada: </h2>
-                    <h2>00:00 às 00:00</h2>
+                    <div class="time">
+                        <span class="time-digit">0</span>
+                        <span class="time-digit">0</span>
+                        <span>:</span>
+                        <span class="time-digit">0</span>
+                        <span class="time-digit">0</span>
+                        <span>às</span>
+                        <span class="time-digit">2</span>
+                        <span class="time-digit">3</span>
+
+                        <span>:</span>
+                        <span class="time-digit">5</span>
+                        <span class="time-digit">9</span>
+
+                    </div>
                     <h2>Permissão de saída: </h2>
-                    <h2>07:00 às 21:00 </h2>
+                    <div class="time">
+                        <span class="time-digit">0</span>
+                        <span class="time-digit">7</span>
+                        <span>:</span>
+                        <span class="time-digit">0</span>
+                        <span class="time-digit">0</span>
+                        <span>às</span>
+                        <span class="time-digit">2</span>
+                        <span class="time-digit">1</span>
+
+                        <span>:</span>
+                        <span class="time-digit">0</span>
+                        <span class="time-digit">0</span>
+
+                    </div>
 
                 </div>
             </div>
@@ -90,5 +119,6 @@
     <footer>
 
     </footer>
+
 </body>
 </html>

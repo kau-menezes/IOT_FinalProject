@@ -9,11 +9,15 @@
 
 * {
     font-family: "Karla", sans-serif;
-    color:var(--font-color);
+    /* color:var(--font-color); */
     margin: 0;
     padding: 0;
 }
 
 .material-symbols-outlined {
     font-size: 60px;
+}
+
+header .material-symbols-outlined:hover {
+    cursor: pointer;
 }

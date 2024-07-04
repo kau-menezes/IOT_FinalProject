@@ -1,0 +1,11 @@
+@import url(./theme.css);
+
+span {
+    font-size: x-large;
+}
+
+.time-digit {
+    background-color: var(--background);
+    padding: 6px;
+    border-radius: 8px;
+}

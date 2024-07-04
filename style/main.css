@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    color: var(--font-color);
 }
 
 main {
@@ -82,3 +83,12 @@ main {
     align-self: flex-end;
     margin-right: 10px;
 } 
+
+body .dark-mode {
+    background-color: #252525;
+    color: var(--background);
+}
+
+span .time-digit .dark-mode {
+    color: #252525;
+}
