@@ -6,9 +6,16 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./assets/style/header.css">
-    <link rel="stylesheet" href="./assets/style/switch-btn.css">
-    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/switch-btn.css">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Add the Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+    <script type="module" src="/script1.js" defer></script>
 
     <title>Cat Door Control</title>
 </head>
@@ -31,7 +38,7 @@
 
     </header>
     <main>
-        <div>
+        <div class="adress">
             <h3>Página Controle  >  Quarto</h3>
         </div>
         <div class="main_blocks">
@@ -40,29 +47,29 @@
                     <span class="material-symbols-outlined">home</span>
                     <h1>Quarto</h1>
                 </div>
-                <div class="div-switchs" id="Xaropinho">
+                <div class="div-switchs">
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
-                    <h1 class="switch-items">Xaropinho</h1>
+                    <h1 class="switch-items" id="gato-1-nome">Xaropinho</h1>
                     <label class="switch switch-items">
                         <input type="checkbox">
                         <span class="slider round"></span>
                       </label>
                 </div>
-                <div class="div-switchs" id="Amora">
+                <div class="div-switchs">
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
-                    <h1 class="switch-items">Xaropinho</h1>
+                    <h1 class="switch-items" id="gato-2-nome">Amora</h1>
                     <label class="switch switch-items">
-                        <input type="checkbox">
+                        <input type="checkbox" id="gato-2-btn" onchange="changePermission('gato-2-btn')">
                         <span class="slider round"></span>
                       </label>
                 </div>
-                <div class="div-switchs" id="Romeu">
+                <div class="div-switchs">
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
-                    <h1 class="switch-items">Xaropinho</h1>
+                    <h1 class="switch-items" id="gato-3-nome">Romeu</h1>
                     <label class="switch switch-items">
-                        <input type="checkbox">
+                        <input type="checkbox" id='gato-3-btn' onchange="changePermission('gato-3-btn')">
                         <span class="slider round"></span>
-                      </label>
+                    </label>
                 </div>
             </div>
             <div class="div-main-blocks">
