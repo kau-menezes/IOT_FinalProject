@@ -24,16 +24,24 @@
     <header>
         <ul>
             <li>
-                <span class="material-symbols-outlined">person</span>
+                <a href="#">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
             </li>
             <li>
-                <span class="material-symbols-outlined">home</span>
+                <a href="./index.html">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
             </li>
             <li>
-                <span class="material-symbols-outlined">alarm</span>
+                <a href="./pages/clock.html">
+                    <span class="material-symbols-outlined">alarm</span>
+                </a>
             </li>
             <li>
-                <span class="material-symbols-outlined" id="btn">dark_mode</span>
+                <a href="#">
+                    <span class="material-symbols-outlined" id="btn">dark_mode</span>
+                </a>
             </li>
         </ul>
 
@@ -52,7 +60,7 @@
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
                     <h1 class="switch-items" id="gato-1-nome">Xaropinho</h1>
                     <label class="switch switch-items">
-                        <input type="checkbox">
+                        <input type="checkbox" id="gato-1-permission" onchange="changePermission(this)">
                         <span class="slider round"></span>
                       </label>
                 </div>
@@ -60,7 +68,7 @@
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
                     <h1 class="switch-items" id="gato-2-nome">Amora</h1>
                     <label class="switch switch-items">
-                        <input type="checkbox" id="gato-2-btn" onchange="changePermission('gato-2-btn')">
+                        <input type="checkbox" id="gato-2-permission" onchange="changePermission(this)">
                         <span class="slider round"></span>
                       </label>
                 </div>
@@ -68,7 +76,7 @@
                     <img src="./assets/img/paw.png" alt="" class="switch-items">
                     <h1 class="switch-items" id="gato-3-nome">Romeu</h1>
                     <label class="switch switch-items">
-                        <input type="checkbox" id='gato-3-btn' onchange="changePermission('gato-3-btn')">
+                        <input type="checkbox" id='gato-3-permission' onchange="changePermission(this)">
                         <span class="slider round"></span>
                     </label>
                 </div>

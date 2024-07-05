@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style/clock.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/switch-btn.css">
+    <link rel="stylesheet" href="../style/theme.css">
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Add the Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+    <script type="module" src="../scriptClock.js" defer></script>
+
+    <title>Cat Door Control</title>
 </head>
 <body>
-    
+    <header>
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">person</span>
+                </a>
+            </li>
+            <li>
+                <a href="../index.html">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </li>
+            <li>
+                <a href=".clock.html">
+                    <span class="material-symbols-outlined">alarm</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined" id="btn">dark_mode</span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main id="main">
+        <div class="adress">
+            <h3>Página Controle  >  Alarme</h3>
+        </div>
+        <div>
+            <div>
+                <label for="">Selecione o horário de entrada desejado: </label>
+                <input type="time" id="InicioEntrada"> até <input type="time" id="FimEntrada">
+            </div>
+            <div>
+                <label for="">Selecione o horário de saída desejado: </label>
+                <input type="time" id="InicioSaida"> até <input type="time" id="FimSaida">
+            </div>
+            <button id="submit-btn" onclick="setClock()"> Alterar </button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
 </html>

@@ -89,6 +89,6 @@ body .dark-mode {
     color: var(--background);
 }
 
-span .time-digit .dark-mode {
-    color: #252525;
+span .time-digit .dark-mode{
+    background-color: #252525;
 }
