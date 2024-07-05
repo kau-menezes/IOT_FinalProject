@@ -16,6 +16,7 @@ const loadData = () => {
 
         setNames();
         setPermission();
+        getClock();
 
     })
 
@@ -66,6 +67,26 @@ const changePermission = (id) => {
     }
 
     service.set(endPoint, body)
+}
+
+const getClock = () =>{
+    document.getElementById("entrada1").innerHTML = body.InicioEntrada[0];
+    document.getElementById("entrada2").innerHTML = body.InicioEntrada[1];
+    document.getElementById("entrada3").innerHTML = body.InicioEntrada[3];
+    document.getElementById("entrada4").innerHTML = body.InicioEntrada[4];
+    document.getElementById("entrada5").innerHTML = body.FimEntrada[0];
+    document.getElementById("entrada6").innerHTML = body.FimEntrada[1];
+    document.getElementById("entrada7").innerHTML = body.FimEntrada[3];
+    document.getElementById("entrada8").innerHTML = body.FimEntrada[4];
+
+    document.getElementById("saida1").innerHTML = body.InicioSaida[0];
+    document.getElementById("saida2").innerHTML = body.InicioSaida[1];
+    document.getElementById("saida3").innerHTML = body.InicioSaida[3];
+    document.getElementById("saida4").innerHTML = body.InicioSaida[4];
+    document.getElementById("saida5").innerHTML = body.FimSaida[0];
+    document.getElementById("saida6").innerHTML = body.FimSaida[1];
+    document.getElementById("saida7").innerHTML = body.FimSaida[3];
+    document.getElementById("saida8").innerHTML = body.FimSaida[4];
 }
 
 window.changePermission = changePermission
