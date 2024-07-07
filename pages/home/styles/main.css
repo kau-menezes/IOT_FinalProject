@@ -1,27 +1,34 @@
 main {
     display: flex;
-    /* margin: 200px 500px 200px 300px; */
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 100%;
-}
-
-.adress {
-    align-self: flex-start;
-    margin-left: 20%;
+    padding: 0 20px;
 }
 
 .main_blocks {
+    width: 100%;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 1000px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .div-main-blocks {
+    max-width: 100%;
+
     display: flex;
     flex-direction: column;
+
+    position: relative;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: -20px;
+    left: 0;
 }
 
 .div-header {
@@ -32,15 +39,17 @@ main {
 }
 
 .div-switchs {
+    width: 400px;
+    max-width: 100%;
+    height: 60px;
+    margin: 20px 20px 20px 0px;
+
+    box-shadow: 2px 2px 5px;
+    border-radius: 25px;
+    
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    box-shadow: 2px 2px 5px;
-    border-radius: 25px;
-    height: 60px;
-    width: 400px;
-    margin: 20px 20px 20px 0px;
-    
 }
 
 .div-switchs > img {
@@ -81,6 +90,17 @@ body .dark-mode {
     color: var(--background);
 }
 
-span .time-digit .dark-mode{
-    background-color: #252525;
+.dark-mode span.time-digit{
+    color: #252525;
+}
+
+span {
+    font-size: x-large;
+
+}
+
+span.time-digit {
+    background-color: var(--background);
+    border-radius: 5px;
+    padding: 3px;
 }

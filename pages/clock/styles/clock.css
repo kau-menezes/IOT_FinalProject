@@ -7,3 +7,43 @@ span {
     padding: 6px;
     border-radius: 8px;
 }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.main-blocks {
+    background-color: var(--yellow);
+    padding: 30px;
+    border-radius: 25px;
+    position: relative;
+    
+    width: 95%;
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3.breadcrumbs {
+    position: absolute;
+    top: -30px;
+}
+
+#submit-btn {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    max-width: max-content;
+    align-self: center;
+}
