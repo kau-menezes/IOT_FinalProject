@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    color: var(--font-color);
+}
+
+a {
+    color: inherit;
+}
+

@@ -7,13 +7,6 @@
     --font-color: rgb(141, 88, 19);
 }
 
-* {
-    font-family: "Karla", sans-serif;
-    /* color:var(--font-color); */
-    margin: 0;
-    padding: 0;
-}
-
 .material-symbols-outlined {
     font-size: 60px;
 }
@@ -22,6 +15,4 @@ header .material-symbols-outlined:hover {
     cursor: pointer;
 }
 
-a {
-    color: inherit;
-}
+

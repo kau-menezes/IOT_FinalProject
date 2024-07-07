@@ -1,14 +1,13 @@
-import {service} from "./js/datebaseConfig.js"
+import { service } from "../../../scripts/datebaseConfig.js"
 
-const endPoint = "/iotgato/site"
+export const endPoint = "/iotgato/site"
 
 // Definindo estrutura do corpo do meu objeto do banco.
-var body = {
-    
-}
+let body = {}
 
-const loadData = () => {
-    // const d = new Date();
+
+export const loadData = () => {
+    // export const d = new Date();
 
     service.load(endPoint).then( data => {
         body = data;
@@ -16,20 +15,11 @@ const loadData = () => {
 
         setNames();
         setPermission();
-        getClock();
-
+        getClock()
     })
-
 }
 
-const darkMode = () => {
-    let main = document.getElementById('main')
-    main.classList.toggle('dark-mode')
-}
-
-document.getElementById("btn").addEventListener("click", darkMode);
-
-const setNames = () => {
+export const setNames = () => {
     const gato1 = document.getElementById("gato-1-nome");
     const gato2 = document.getElementById("gato-2-nome");
     const gato3 = document.getElementById("gato-3-nome");
@@ -40,7 +30,7 @@ const setNames = () => {
 
 }
 
-const setPermission = () => {
+export const setPermission = () => {
     const gato1 = document.getElementById("gato-1-permission");
     const gato2 = document.getElementById("gato-2-permission");
     const gato3 = document.getElementById("gato-3-permission");
@@ -51,7 +41,7 @@ const setPermission = () => {
 
 }
 
-const changePermission = (id) => {
+export const changePermission = (id) => {
     switch (id.id) {
         case "gato-1-permission":
             body.Gatos[0].PodeEntrar = id.checked
@@ -69,7 +59,7 @@ const changePermission = (id) => {
     service.set(endPoint, body)
 }
 
-const getClock = () =>{
+export const getClock = () =>{
     document.getElementById("entrada1").innerHTML = body.InicioEntrada[0];
     document.getElementById("entrada2").innerHTML = body.InicioEntrada[1];
     document.getElementById("entrada3").innerHTML = body.InicioEntrada[3];
@@ -88,13 +78,3 @@ const getClock = () =>{
     document.getElementById("saida7").innerHTML = body.FimSaida[3];
     document.getElementById("saida8").innerHTML = body.FimSaida[4];
 }
-
-window.changePermission = changePermission
-
-setInterval(() => {
-    loadData();
-}, 2000);
-
-
-
-
