@@ -25,8 +25,7 @@ export const getClock = () =>{
     timeControl[3].value = body.FimSaida.substring(0, 5)
 }
 
-export const setClock = (event) =>{
-    event.preventDefault();
+export const setClock = () =>{
     const timeControl = document.querySelectorAll('input[type="time"]');
     body.InicioEntrada = timeControl[0].value
     body.FimEntrada = timeControl[1].value
