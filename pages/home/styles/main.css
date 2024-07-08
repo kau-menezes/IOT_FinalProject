@@ -39,7 +39,7 @@ main {
 }
 
 .div-switchs {
-    width: 400px;
+    width: 440px;
     max-width: 100%;
     height: 60px;
     margin: 20px 20px 20px 0px;
@@ -87,7 +87,7 @@ main {
 
 body .dark-mode {
     background-color: #252525;
-    color: var(--background);
+    color:antiquewhite;
 }
 
 .dark-mode span.time-digit{
@@ -100,7 +100,7 @@ span {
 }
 
 span.time-digit {
-    background-color: var(--background);
+    background-color: antiquewhite;
     border-radius: 5px;
     padding: 3px;
 }

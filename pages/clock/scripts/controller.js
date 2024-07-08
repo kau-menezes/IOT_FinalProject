@@ -1,10 +1,7 @@
 import { darkMode } from "../../../scripts/darkMode.js";
 import { loadData, setClock } from "./functions.js";
 
-
-setInterval(() => {
-    loadData();
-}, 2000);
+loadData();
 
 window.setClock = setClock
 

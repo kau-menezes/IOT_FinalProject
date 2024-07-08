@@ -37,7 +37,7 @@ h3.breadcrumbs {
 }
 
 #submit-btn {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background);
     border: none;
     font-family: "Karla", sans-serif;
     font-weight: 500;
@@ -47,3 +47,10 @@ h3.breadcrumbs {
     max-width: max-content;
     align-self: center;
 }
+
+.time-input {
+    background-color: var(--background);
+    font-family: "Karla", sans-serif;
+    border-color: var(--);
+
+} 
