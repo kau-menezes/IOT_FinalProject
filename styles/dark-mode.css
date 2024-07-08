@@ -1,0 +1,28 @@
+body .dark-mode {
+    background-color: #252525;
+    color:antiquewhite;
+}
+
+.dark-mode span.time-digit{
+    color: #252525;
+}
+
+.dark-mode tr:nth-child(even) {
+
+    background-color: rgb(133, 113, 87);
+    color: rgb(94, 59, 13);
+    font-weight: bold;
+
+
+}
+
+tr:nth-child(n) {
+    background-color: rgb(94, 59, 13);
+    color: var(--background);
+}
+
+.dark-mode td, th {
+    border: 1px solid rgb(95, 59, 13);
+
+}
+

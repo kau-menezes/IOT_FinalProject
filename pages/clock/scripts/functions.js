@@ -32,7 +32,7 @@ export const setClock = () =>{
     body.InicioSaida = timeControl[2].value
     body.FimSaida = timeControl[3].value
     service.set(endPoint, body)
-    alert("Alterado com sucesso");
+    alert("Alterado com sucesso!");
     // location.href = '../index.html';
 }
 

@@ -23,12 +23,25 @@ div.main-blocks {
     position: relative;
     
     width: 95%;
-    max-width: 600px;
+    max-width: 820px;
     margin: auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.time-block{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+label {
+    font-weight: 600;
+    font-size: x-large;
 }
 
 h3.breadcrumbs {
@@ -37,20 +50,43 @@ h3.breadcrumbs {
 }
 
 #submit-btn {
-    background-color: var(--background);
     border: none;
+    background-color: var(--background);
     font-family: "Karla", sans-serif;
-    font-weight: 500;
+    font-size: larger;
+    font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 15px;
-    max-width: max-content;
     align-self: center;
+}
+
+#submit-btn:hover {
+    background-color: var(--font-color);
+    color: var(--background);
+    cursor: pointer;
 }
 
 .time-input {
     background-color: var(--background);
     font-family: "Karla", sans-serif;
-    border-color: var(--);
+    border-color: inherit ;
+    margin: 0px 15px 0px 15px;
+    font-size: large;
+    border-radius: 10px;
+    padding: 4px;
+    cursor: pointer;
 
 } 
+
+body .dark-mode {
+    background-color: #252525;
+    color:antiquewhite;
+}
+
+.dark-mode span.time-digit{
+    color: #252525;
+}
+
+input #submit-btn .dark-mode {
+    background-color: aliceblue;
+}

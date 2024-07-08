@@ -4,6 +4,8 @@ h1{
 
 table, th, td {
     border: 1px solid var(--font-color);
+    font-weight: bold;
+
 }
 
 table {
@@ -30,7 +32,13 @@ th{
 
 
 tr:nth-child(even) {
-    background-color: #DCEBE6;
+    background-color: var(--background);
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(172, 140, 99);
 }
 
 tr:hover:nth-child(n) {
@@ -43,5 +51,11 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    flex-direction: column;
     
+}
+
+h3 {
+    font-size: x-large;
+    margin-bottom: 20px;
 }
