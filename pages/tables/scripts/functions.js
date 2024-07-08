@@ -21,12 +21,23 @@ export const loadTable = () =>{
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");
     var tr = document.createElement("tr");
+
     var t = document.createElement("th");
     t.append("Gato")
+    tr.append(t);
+
+    t = document.createElement("th");
     t.append("Porta")
+    tr.append(t);
+    
+    t = document.createElement("th");
     t.append("Hora")
+    tr.append(t);
+    
+    t = document.createElement("th");
     t.append("Entrada/Saida");
     tr.append(t);
+
     thead.append(tr);
     tabela.append(thead);
     for(var i=0;i<body.length;i++){
